@@ -1,0 +1,16 @@
+.footer {
+  text-align: center;
+  padding: 6px 12px;
+  background: rgba(15, 20, 30, 0.6); /* Fondo oscuro translúcido */
+  color: #00d1ff; /* Color futurista azul brillante */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px; /* Espaciado entre letras para un efecto moderno */
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(0, 209, 255, 0.4); /* Línea superior con color brillante */
+  box-shadow: 0px -1px 8px rgba(0, 209, 255, 0.3); /* Sombra luminosa */
+  z-index: 1000;
+}

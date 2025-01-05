@@ -1,0 +1,129 @@
+/* Mensaje del carrito vacío */
+.cart-summary-empty {
+  position: fixed;
+  top: 80px;
+  right: 15px;
+  font-family: "Poppins", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, rgba(255, 78, 80, 0.8), rgba(249, 212, 35, 0.8));
+  padding: 8px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 87, 34, 0.5);
+  animation: slideIn 0.8s ease-out;
+  backdrop-filter: blur(6px);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 1100;
+  max-width: 90%;
+  word-break: break-word;
+}
+
+/* Contenedor principal del carrito */
+.cart-summary {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #232526, #414345);
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  animation: float 2s ease-in-out infinite;
+  max-width: 95%;
+  word-break: break-word;
+}
+
+/* Hover y efecto sutil */
+.cart-summary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.7);
+}
+
+/* Total del carrito con estilo futurista */
+.cart-total {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #76ff03;
+  text-shadow: 0 0 15px rgba(118, 255, 3, 0.8);
+  letter-spacing: 2px;
+}
+
+/* Enlace al carrito */
+.cart-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover en el enlace */
+.cart-link:hover {
+  opacity: 0.9;
+  transform: translateX(3px);
+}
+
+/* Animación de flotación */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de brillo */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(255, 235, 61, 0.8);
+  }
+}
+
+/* Ajustes responsivos para dispositivos móviles */
+@media (max-width: 480px) {
+  .cart-summary {
+    top: 70px;
+    padding: 12px;
+  }
+
+  .cart-summary-empty {
+    top: 60px;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+    max-width: 95%;
+  }
+
+  .cart-link {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .cart-total {
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(118, 255, 3, 0.7);
+  }
+}

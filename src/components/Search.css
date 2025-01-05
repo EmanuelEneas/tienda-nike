@@ -1,0 +1,65 @@
+/* Container principal de la búsqueda */
+.search-container {
+    position: absolute;
+    top: 15px;           
+    left: 15px;         
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por el contenedor */
+.search-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulario de búsqueda */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Input de búsqueda */
+.search-input {
+    flex-grow: 1;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+    min-width: 150px; /* Tamaño mínimo del input */
+}
+
+/* Efecto de enfoque en el input */
+.search-input:focus {
+    border-color: #42a5f5;
+    box-shadow: 0 0 6px rgba(66, 165, 245, 0.5);
+}
+
+/* Placeholder del input */
+.search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+/* Icono de búsqueda */
+.search-icon {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+    color: #90caf9;
+}
+

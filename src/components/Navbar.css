@@ -1,0 +1,178 @@
+/* Navbar General */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #1e3c72, #000000);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar Enlaces */
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  font-size: 24px;
+  color: #0d0e07;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 8px 12px;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Cards y Contenedor */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #1a98ff, #660000);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo de Imágenes */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* Contenido de la Card */
+.card h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 15px 0 10px;
+}
+
+.card p {
+  color: #c0c0c0;
+  font-size: 1rem;
+  margin: 0 0 15px;
+  line-height: 1.5;
+}
+
+.card button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Cards */
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #333;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.nav-link:active {
+  background-color: #444;
+}
